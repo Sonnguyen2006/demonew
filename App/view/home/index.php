@@ -42,4 +42,4 @@
         </section>
         <!-- Footer-->
 
-        <?php require "layout/homheader.php"; ?>
+        <?php require "./layout/homefooter.php"; ?>

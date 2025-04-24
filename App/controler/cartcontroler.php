@@ -3,6 +3,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
+
 class cartcontroler
 {
     public function add()
@@ -32,5 +33,28 @@ class cartcontroler
             exit;
         }
     }
+    public function index()
+    {
+        require_once './Model/productModel.php';
+        $productModel = new ProductModel();
+        if (session_status() === PHP_SESSION_NONE) {
+           session_start();
+        }
+
+        $cartItems =[];
+        if (isset($_SESSION['cart']))
+        {
+            foreach($_SESSION['cart'] as $product)
+            {
+                $products =  $productModel->getProductById($product['product_id']);
+                $products['quantity'] = $product['quantity'];
+                $cartItems[] =  $products;
+
+            }
+        }
+        
+        include './App/view/cart/index.php';
+    }
+    
 }
 ?>
