@@ -22,7 +22,7 @@ $baseURL = $config['baseURL'];
                 </thead>
                 <tbody>
                     <?php
-                    $totalAll = 0;
+                    $totalAll = 0;  
                     foreach ($cartItems as $item) :
                         $total = $item['Price'] * $item['quantity'];
                         $totalAll += $total;

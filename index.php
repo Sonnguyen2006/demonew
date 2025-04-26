@@ -3,6 +3,8 @@
     require_once "App/controler/usercontroler.php";
     require_once "App/controler/homecontroler.php";
     require_once "App/controler/cartcontroler.php";
+    require_once "App/controler/ordercontroler.php";
+    require_once "App/controler/ordercontroler.php";
     
     // $url = $_GET['url'];
 

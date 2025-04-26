@@ -19,6 +19,7 @@ class productModel {
     $stmt = $this->db->prepare("INSERT INTO product (Name, Price, Image) VALUES (?, ?, ?)");
     $stmt->execute([$name, $price, $image]);
 }
+
     
     public function delete($id)
 {
@@ -34,6 +35,7 @@ public function getProductById($id)
         $stmt->execute();
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
+
 }
 ?>
 
