@@ -5,7 +5,7 @@ class usercontroler
 {
     public function index()
     {
-        include __DIR__ . '/../view/user/index.php';
+        include __DIR__ . '/../view/user/login.php';
     }
     public function register()
     {

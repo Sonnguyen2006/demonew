@@ -37,7 +37,7 @@ if (session_status() === PHP_SESSION_NONE) {
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">All Products</a></li>
+                                <li><a class="dropdown-item" href="<?=$baseURL . 'home/index'?>">All Products</a></li>
                                 <li><hr class="dropdown-divider" /></li>
                                 <li><a class="dropdown-item" href="#!">Popular Items</a></li>
                                 <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
@@ -55,7 +55,7 @@ if (session_status() === PHP_SESSION_NONE) {
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownProfile">
                                     <li><a class="dropdown-item" href="#!"><?= $_SESSION['username'] ?></a></li>
-                                    <li><a class="dropdown-item" href="#!">Lịch sử đơn hàng</a></li>
+                                    <li><a class="dropdown-item" href="<?=$baseURL?>order/history">Lịch sử đơn hàng</a></li>
                                     <li><hr class="dropdown-divider" /></li>
                                     <li><a class="dropdown-item" href="<?=$baseURL?>user/logout">Logout</a></li>
                                 </ul>
@@ -83,9 +83,9 @@ if (session_status() === PHP_SESSION_NONE) {
             </div>
         </nav>
         <!-- Header-->
-        <header class="bg-dark py-5">
+        <header class="bg-dark py-5" style="position: sticky !important; top: 0;">
             <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
+                <div class="text-center text-white" >
                     <h1 class="display-4 fw-bolder">Shop in style</h1>
                     <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
                 </div>

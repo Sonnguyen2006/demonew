@@ -23,7 +23,7 @@
                                 </div>
                             </div>
                             <!-- Product actions-->
-                            <form method="post" action="<?=$baseURL .'cart/add'?>" class="text-center ">
+                            <form method="post" action="<?=$baseURL .'cart/add'?>" class="text-center mb-lg-2">
                             <input type="hidden" name="product_id" value="<?= $product['Id'] ?>">
                             <button type="submit" class=" btn-outline-light p4 mt-auto btn btn-primary btn-sm">Add to Cart</button>
 
