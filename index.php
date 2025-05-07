@@ -5,6 +5,7 @@
     require_once "App/controler/cartcontroler.php";
     require_once "App/controler/ordercontroler.php";
     require_once "App/controler/ordercontroler.php";
+    require_once "App/controler/admincontroler.php";
     
     // $url = $_GET['url'];
 
